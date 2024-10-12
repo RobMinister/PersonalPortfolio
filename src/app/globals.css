@@ -1,0 +1,33 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+a, span {
+  transition: all 0.3s ease;
+}
+
+a:hover, span:hover {
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: #1a73e8;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #005cbf;
+}
