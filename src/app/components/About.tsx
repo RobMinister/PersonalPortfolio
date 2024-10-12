@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const About = () => {
   return (
     <section
@@ -5,19 +7,20 @@ const About = () => {
       className="min-h-screen flex justify-center items-center bg-gradient-to-b from-gray-200 to-gray-50 py-20"
       style={{ scrollMarginTop: '80px' }}
     >
-      <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-between px-8 md:px-16"> {/* Added wider left and right gap */}
+      <div className="w-full max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center md:justify-between">
         {/* Left: Profile Image */}
-        <div className="flex-shrink-0">
-          <img
+        <div className="flex-shrink-0 mb-8 md:mb-0">
+          <Image
             src="/images/profile.jpg"
             alt="Robin Sharma"
+            width={300}
+            height={350} // Use width and height in the <Image /> tag
             className="rounded-lg object-cover"
-            style={{ width: '300px', height: '350px' }} // Adjusted the image size to match your example
           />
         </div>
 
         {/* Right: About Me Details */}
-        <div className="md:ml-12 mt-8 md:mt-0 w-full">
+        <div className="md:ml-12 w-full">
           <h1 className="text-5xl font-bold mb-4">About Me</h1>
           <p className="text-lg text-gray-600 max-w-2xl mb-8">
             Passionate about developing scalable web applications, focusing on React, Node.js, and modern web technologies.
