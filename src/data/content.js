@@ -182,7 +182,7 @@ export const workExperience = [
       "Modernized university websites and systems using WordPress for frontend, MySQL and PHP for backend, integrated PeopleSoft with RESTful APIs, JSON and AJAX increasing system efficiency by 50% and reducing downtime by 30%",
       "Engineered advanced forms using BP Logix and MySQL, leveraging JavaScript and jQuery for custom scripting, resulting in a 50% reduction in administrative workload and seamless CRM and LDAP integration"
     ],
-    img: "https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/283978428_10158306917185124_130782704921181534_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=_azVRMBLJlQQ7kNvgHRg4_1&_nc_zt=23&_nc_ht=scontent-msp1-1.xx&_nc_gid=AUbj3Uetle1KMUp8aJ6CMtn&oh=00_AYDzsIx2Nib-viOP8LwMrDt-4wZtn9X5pvtAxSlBd57UeA&oe=671B6A19"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWuHO08YkvLkJYWamnSa3dO8iUlepvZ14_-g&s"
   },
   {
     id: 1,
