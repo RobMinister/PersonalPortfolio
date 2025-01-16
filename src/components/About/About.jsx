@@ -109,7 +109,7 @@ const HorizontalLine = styled.hr`
 
 const About = () => {
   const handleDownloadCV = () => {
-    const driveLink = "https://drive.google.com/file/d/1e-ac8roAY9AihOqIPwmMu80-iyWrr4EU/view?usp=sharing";
+    const driveLink = "https://drive.google.com/file/d/13PiOzkRlt4TaG8A48h29-fkmrF0e9E6H/view?usp=drive_link";
     window.open(driveLink, "_blank");
   };
 
