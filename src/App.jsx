@@ -25,7 +25,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
-        <Work /> {/* Adding the Work component */}
+        <Work />
         <Education />
         <Contact />
         <Footer />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import Profile from './Profile.jpg';
 import { BsArrowUpRight } from 'react-icons/bs';
@@ -78,6 +78,12 @@ const Button = styled.button`
     transform: scale(1.1);
   }
 `;
+
+const ClickMeButton = styled(Button)`
+  background-color: yellow;
+  color: black;
+`;
+
 const IconWrapper = styled.span`
   margin-left: 8px;
 `;
@@ -107,7 +113,63 @@ const HorizontalLine = styled.hr`
   margin-bottom: 30px;
 `;
 
+const ModalOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ModalContent = styled.div`
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 650px;
+  position: relative;
+`;
+
+const CloseButton = styled.button`
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 9px;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+
+  &:hover {
+    background-color: darkred;
+  }
+`;
+
+const Iframe = styled.iframe`
+  width: 100%;
+  height: 100%;
+  border: none;
+`;
+
 const About = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   const handleDownloadCV = () => {
     const driveLink = "https://drive.google.com/file/d/13PiOzkRlt4TaG8A48h29-fkmrF0e9E6H/view?usp=drive_link";
     window.open(driveLink, "_blank");
@@ -139,7 +201,19 @@ const About = () => {
               <Button>Contact Me <IconWrapper><BsArrowUpRight /></IconWrapper></Button>
             </Link>
             <Button onClick={handleDownloadCV}>Download CV <IconWrapper><TfiDownload /></IconWrapper></Button>
+            <ClickMeButton onClick={handleOpenModal}>Click to Play a game</ClickMeButton>
           </ButtonContainer>
+          {isModalOpen && (
+            <ModalOverlay>
+              <ModalContent>
+                <CloseButton onClick={handleCloseModal}>Close</CloseButton>
+                <Iframe
+                  src="https://tictactoerobin.vercel.app"
+                  title="Tic Tac Toe"
+                />
+              </ModalContent>
+            </ModalOverlay>
+          )}
           <HorizontalLine />
         </AboutContent>
       </MainAbout2>
