@@ -178,9 +178,9 @@ export const workExperience = [
     role: "Software Engineer II",
     date: "June 2024 - Present",
     description: [
-      "Engineered Scholarship App using C#, .NET, LINQ, dependency injection, asynchronous programming, MS SQL and REST APIs implementing OAuth user authentication with Azure Active Directory achieving 95% user satisfaction rate",
-      "Modernized university websites and systems using WordPress for frontend, MySQL and PHP for backend, integrated PeopleSoft with RESTful APIs, JSON and AJAX increasing system efficiency by 50% and reducing downtime by 30%",
-      "Engineered advanced forms using BP Logix and MySQL, leveraging JavaScript and jQuery for custom scripting, resulting in a 50% reduction in administrative workload and seamless CRM and LDAP integration"
+      "Engineered Scholarship App including system design, C#, .NET, LINQ, MS SQL and OAuth authentication with Azure Active Directory increasing system efficiency by 90%",
+      "Architected MS SQL database schemas, developed scalable RESTful APIs and utilized asynchronous programming and Entity Framework Core to optimize server-side performance and data processing improving data throughput by 75%",
+      "Enhanced university websites by fixing bugs and adding features using WordPress, MySQL, PHP, JavaScript, jQuery and integrating PeopleSoft with RESTful APIs, JSON and AJAX increasing system efficiency by 80% and reducing downtime by 70%"
     ],
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWuHO08YkvLkJYWamnSa3dO8iUlepvZ14_-g&s"
   },
