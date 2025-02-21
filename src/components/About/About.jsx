@@ -186,7 +186,7 @@ const About = () => {
             and Creating Seamless User Experiences.
           </CombinedTitle>
           <Description>
-            <p><i>I am a software engineer with expertise in both front-end and back-end technologies, currently working as a Software Engineer II at the University of Wisconsin - Superior.</i></p>
+            <p><i>Full-Stack Software Engineer with 3+ years of experience in backend and frontend technologies, including Java, C#, .NET, Python, Node.js, React, and Angular, with a strong focus on RESTful API development, microservices architecture and cloud-based solutions</i></p>
           </Description>
           <ScoialIcon>
             <a href="https://github.com/RobMinister" target="_blank" rel="noopener noreferrer">
