@@ -123,7 +123,7 @@ const Contact = () => {
         <InnerContainer>
           <Title>Contact</Title>
           <p>
-            Please contact me directly at <u>robsharma197@gmail.com</u> or through this form.
+            Please contact me directly at <u>93robin@gmail.com</u> or through this form.
           </p>
           <Form action="https://formspree.io/f/xzzbzzkz" method="POST">
             <InputContainer>
