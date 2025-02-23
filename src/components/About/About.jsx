@@ -171,7 +171,7 @@ const About = () => {
   };
 
   const handleDownloadCV = () => {
-    const driveLink = "https://drive.google.com/file/d/1lIgn7DgIxLvTLhkv90WFLw0iytiy-S3W/view?usp=drive_link";
+    const driveLink = "https://drive.google.com/file/d/132M7Ojb8rznOo4i8-QP0_NzlxxnXBnB4/view?usp=drive_link";
     window.open(driveLink, "_blank");
   };
 
