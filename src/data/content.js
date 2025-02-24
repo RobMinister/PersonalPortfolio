@@ -176,7 +176,7 @@ export const workExperience = [
     id: 0,
     company: "University of Wisconsin - Superior",
     role: "Software Engineer II",
-    date: "June 2024 - Present",
+    date: "June 2024 - November 2024",
     description: [
       "Engineered Scholarship App including system design, C#, .NET, LINQ, MS SQL and OAuth authentication with Azure Active Directory increasing system efficiency by 90%",
       "Architected MS SQL database schemas, developed scalable RESTful APIs and utilized asynchronous programming and Entity Framework Core to optimize server-side performance and data processing improving data throughput by 75%",
