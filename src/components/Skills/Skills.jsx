@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import styled from 'styled-components';
 import { skills } from '../../data/content';
+
+const CATEGORY_ORDER = [
+  'Backend & Languages',
+  'Frontend',
+  'Databases',
+  'Tools',
+];
 
 const SkillsContainer = styled.div`
   display: flex;
@@ -25,8 +32,17 @@ const SkillList = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 12px 24px;
   padding: 20px 100px;
+`;
+
+const ToolsGroup = styled.div`
+  display: inline-flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  @media (max-width: 768px) {
+    gap: 8px;
+  }
 `;
 
 const SkillItem = styled.div`
@@ -50,7 +66,7 @@ const SkillImage = styled.img`
 
 const ResponsiveSkillList = styled(SkillList)`
   @media (max-width: 768px) {
-    gap: 8px;
+    gap: 8px 12px;
     padding: 0px 10px;
   }
 `;
@@ -62,17 +78,38 @@ const ResponsiveSkillItem = styled(SkillItem)`
 `;
 
 const Skills = () => {
+  const { otherSkills, toolsSkills } = useMemo(() => {
+    const grouped = {};
+    skills.forEach((skill) => {
+      const cat = skill.category || 'Other';
+      if (!grouped[cat]) grouped[cat] = [];
+      grouped[cat].push(skill);
+    });
+    const tools = grouped['Tools'] || [];
+    const other = CATEGORY_ORDER.filter((cat) => cat !== 'Tools' && grouped[cat])
+      .flatMap((cat) => grouped[cat]);
+    return { otherSkills: other, toolsSkills: tools };
+  }, []);
+
   return (
     <SkillsContainer id="skills">
       <SkillsContent>
         <Title>Skills</Title>
         <ResponsiveSkillList>
-          {skills.map((item) => (
-            <ResponsiveSkillItem key={item.name}>
+          {otherSkills.map((item) => (
+            <ResponsiveSkillItem key={item.name} title={item.name}>
               <SkillImage src={item.image} alt={item.name} />
               {item.name}
             </ResponsiveSkillItem>
           ))}
+          <ToolsGroup>
+            {toolsSkills.map((item) => (
+              <ResponsiveSkillItem key={item.name} title={item.name}>
+                <SkillImage src={item.image} alt={item.name} />
+                {item.name}
+              </ResponsiveSkillItem>
+            ))}
+          </ToolsGroup>
         </ResponsiveSkillList>
       </SkillsContent>
     </SkillsContainer>

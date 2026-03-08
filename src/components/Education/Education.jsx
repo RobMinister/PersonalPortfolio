@@ -79,32 +79,54 @@ const Card = styled.div`
 `;
 
 const EducationCard = styled.div`
-  .top {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
     width: 100%;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 6px;
+    }
+  }
+
+  .top {
     display: flex;
     gap: 12px;
+    min-width: 0;
+    flex: 1;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   .imager {
     height: 55px;
     width: 55px;
+    flex-shrink: 0;
     border-radius: 10px;
     margin-top: 4px;
     @media only screen and (max-width: 768px){
       height: 40px;
+      width: 40px;
     }
   }
 
   .body-edu {
-    width: 100%;
+    min-width: 0;
+    flex: 1;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .name {
     font-size: 18px;
     font-weight: 600;
     color: ${(props) => props.theme.remainingTextColor};
+    line-height: 1.3;
     @media only screen and (max-width: 768px){
       font-size: 14px;
     }
@@ -115,20 +137,23 @@ const EducationCard = styled.div`
     font-weight: 500;
     font-style: italic;
     color: ${(props) => props.theme.remainingTextColor};
+    line-height: 1.3;
     @media only screen and (max-width: 768px){
       font-size: 12px;
     }
   }
 
   .date {
-    position: absolute;
-    top: 12px;
-    right: 16px;
+    flex-shrink: 0;
     font-size: 14px;
     font-weight: 500;
     color: ${(props) => props.theme.remainingTextColor};
+    white-space: nowrap;
     @media only screen and (max-width: 768px){
       font-size: 12px;
+      width: 100%;
+      margin-top: 2px;
+      text-align: right;
     }
   }
 `;
@@ -137,16 +162,18 @@ const EducationCardComponent = ({ educationData }) => {
   return (
     <Card>
       <EducationCard>
-        <div className="top">
-          <img className="imager" src={educationData.img} alt="Education Logo" />
-          <div className="body-edu">
-            <div className="name">{educationData.school}</div>
-            <div className="degree">
-              <i>{educationData.degree}</i>
+        <div className="header">
+          <div className="top">
+            <img className="imager" src={educationData.img} alt="Education Logo" />
+            <div className="body-edu">
+              <div className="name">{educationData.school}</div>
+              <div className="degree">
+                <i>{educationData.degree}</i>
+              </div>
             </div>
           </div>
+          <div className="date">{educationData.date}</div>
         </div>
-        <div className="date">{educationData.date}</div> {/* Moved date to top right */}
       </EducationCard>
     </Card>
   );

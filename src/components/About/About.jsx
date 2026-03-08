@@ -197,6 +197,9 @@ const About = () => {
             </a>
           </ScoialIcon>
           <ButtonContainer>
+            <a href="https://www.robin-sharma.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+              <Button>My Website <IconWrapper><BsArrowUpRight /></IconWrapper></Button>
+            </a>
             <Link to="contact" spy={true} smooth={true} offset={-80} duration={500} delay={200}>
               <Button>Contact Me <IconWrapper><BsArrowUpRight /></IconWrapper></Button>
             </Link>

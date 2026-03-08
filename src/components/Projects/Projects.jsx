@@ -21,6 +21,14 @@ const Title = styled.h2`
   color: ${(props) => props.theme.remainingTextColor};
 `;
 
+const Subtitle = styled.p`
+  text-align: center;
+  color: ${(props) => props.theme.remainingTextColor};
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-top: 8px;
+`;
+
 const ProjectList = styled.div`
   display: grid;
   gap: 40px;
@@ -118,6 +126,7 @@ const Projects = () => {
     <ProjectsContainer id="projects">
       <ProjectsContent>
         <Title>Projects</Title>
+        <Subtitle>Links to GitHub repositories</Subtitle>
         <ProjectList>
           {projectData.map((project, index) => (
             <ProjectCard key={index} project={project} />
