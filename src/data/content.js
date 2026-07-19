@@ -205,14 +205,13 @@ export const workExperience = [
     role: "Backend Software Engineer",
     date: "May 2025 - Present",
     description: [
-      "Architected and deployed a containerized .NET Core microservice using Podman (pods) on AWS Linux EC2, enabling scalable user activity logging and dynamic traffic redirection across high-traffic application flows",
-      "Designed and maintained multiple REST APIs for user access control, subscription validation, rewards logic, and platform integrations",
-      "Implemented a real-time notification service using SignalR to deliver live updates to active users",
-      "Engineered large-scale data processing workflows, analyzing 300M+ records using Python and AWS Athena to generate actionable product insights",
-      "Developed secure data duplication services with role-based permission controls (RBAC) and hierarchical data integrity across user accounts",
-      "Refactored legacy endpoints into configuration-driven services using interfaces, repository abstractions, and dependency injection, improving maintainability and system stability",
-      "Implemented rate limiting and backend resilience safeguards to enhance system reliability and prevent misuse at scale"
-    ],
+  "Architected and deployed containerized .NET Core microservice using Podman on AWS EC2, enabling scalable user activity logging and dynamic traffic redirection across high-traffic application flows",
+  "Shipped 130+ backend features, enhancements, and bug fixes across user-facing site and admin platforms in C# and .NET, supporting both end-user and admin product lines",
+  "Developed real-time notification service with SignalR, delivering live updates to 50,000+ concurrent users at 99.9% uptime",
+  "Processed 300M+ records using Python and AWS Athena to generate marketing and product insights, including song and resource-usage analytics for newly onboarded school districts",
+  "Built CRUD REST endpoints for MusicXML music files, enabling create, edit, and delete operations on music documents; engineered metadata-based redirect logic that routes users to new viewers by file data",
+  "Implemented rate limiting and transaction locks on contest endpoints, built Role-Based Access Control-based data duplication services with cleanup tool that removed 20,000+ duplicate records, cutting downtime by 30% and strengthening data integrity"
+ ],
     img: "/QUAVERED.png"
   },
   {
@@ -221,10 +220,10 @@ export const workExperience = [
     role: "Software Engineer II",
     date: "June 2024 - November 2024",
     description: [
-      "Engineered Scholarship App including system design, C#, .NET, LINQ, MS SQL and OAuth authentication with Azure Active Directory increasing system efficiency by 90%",
-      "Architected MS SQL database schemas, developed scalable RESTful APIs and utilized asynchronous programming and Entity Framework Core to optimize server-side performance and data processing improving data throughput by 75%",
-      "Enhanced university websites by fixing bugs and adding features using WordPress, MySQL, PHP, JavaScript, jQuery and integrating PeopleSoft with RESTful APIs, JSON and AJAX increasing system efficiency by 80% and reducing downtime by 70%"
-    ],
+  "Engineered Scholarship application end-to-end (system design, C#, .NET, LINQ, MS SQL, and OAuth authentication via Azure Active Directory), increasing system efficiency by 90%",
+  "Crafted MS SQL database schemas and scalable RESTful APIs using asynchronous programming and Entity Framework Core, improving data throughput by 75%",
+  "Modernized university websites by resolving bugs and integrating PeopleSoft via REST APIs, JSON, and AJAX (WordPress, MySQL, PHP, JavaScript, jQuery), increasing system efficiency by 80% and cutting downtime by 70%"
+ ],
     img: "/UWS.png"
   },
   {
@@ -233,11 +232,10 @@ export const workExperience = [
     role: "Software Engineer",
     date: "June 2023 - March 2024",
     description: [
-      "Spearheaded Agile-based password management solution across 300 servers saving 200+ hours/month by utilizing Angular, Ionic, C#, .NET for REST APIs and MySQL achieving 20% reduction in bugs and development speed improvement",
-      "Implemented automated email notifications to enhance security reducing password incidents by 45% and upgrading security with Azure authentication utilizing AES+HMAC encryption",
-      "Developed scripts to transfer 3000 legacy records from MySQL to MS SQL cutting migration time by 70% while utilizing JavaScript and React to create UI mockups and complex designs into functional web interfaces",
-      "Leveraged JFrog, HashiCorp, OWASP ZAP and SonarQube for rigorous vulnerability testing and resolution, maintained top-tier security with Azure authentication and AES+HMAC encryption achieving a 50% reduction in potential threats"
-    ],
+  "Spearheaded Agile-based password management solution across 300 servers (Angular, Ionic, C#, .NET, REST APIs, MySQL), saving 200+ hours/month and reducing bugs by 20%",
+  "Reduced password-related security incidents by 45% by integrating automated email notifications and upgrading authentication with Azure AD and AES+HMAC encryption",
+  "Conducted vulnerability testing and remediation using JFrog, HashiCorp, OWASP ZAP, and SonarQube, cutting potential security threats by 50%"
+ ],
     img: "/UPS.png"
   },
   {
@@ -246,12 +244,10 @@ export const workExperience = [
     role: "Senior Software Engineer",
     date: "November 2019 - December 2021",
     description: [
-      "Advocated as SCRUM Master using Agile Methodology for Travel Booking website with Oracle Database, Java (Spring Boot), Node.js, HTML, CSS, Angular 6 and Typescript delivering features 30% faster through iterative sprints",
-      "Built backend microservices with Java (Spring Boot), Hibernate, JAX-RS, and Oracle PL/SQL implemented RESTful APIs with OAuth2 and Swagger, automated CI/CD pipelines with Jenkins reducing processing time by 65%",
-      "Optimized backend performance by integrating Redis caching, RabbitMQ messaging, and GraphQL, enhancing API efficiency, inter-service communication, and reducing latency by 50%",
-      "Led a 3-member team in transitioning Westpac Bank's database from Oracle to MS SQL, developing new SQL Scripts, Stored Procedures, Shell Scripts and SFTP Configuration encompassing more than 2000 tables and 400 scripts",
-      "Devised Shell Script code utilizing UNIX and Control-M, automating retrieval and secure transfer of essential files for Risk Analysis; resulted in remarkable 80% improvement in efficiency, saving 25+ hours per week"
-    ],
+  "Delivered travel booking platform (Java/Spring Boot, Node.js, Angular, Oracle DB) with OAuth2-secured REST APIs and Hibernate/PL-SQL integration; served as Scrum Master, improving release speed by 30%",
+  "Optimized system performance with Redis, RabbitMQ, and GraphQL, reducing API latency by 50% and increasing scalability",
+  "Led Oracle-to-MS SQL migration for banking system, refactoring 2,000+ tables and 400+ scripts and improving operational efficiency by 80%"
+ ],
     img: "/INFOSYS.jpg"
   }
 ];
